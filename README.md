@@ -1,5 +1,7 @@
 # OOCAA UI
 
+React front end or user interface for the OOCAA (Online Orbital Collision Alert and Analysis) platform.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Setup
