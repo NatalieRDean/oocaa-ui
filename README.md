@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# OOCAA UI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup
+- Make sure the [oocaa-api](https://github.com/NatalieRDean/oocaa-api) repo is set up first.
+- Clone the repository to a desired location.
+
+  ```
+  git clone https://github.com/NatalieRDean/oocaa-ui.git
+  ```
+  
+- Open the folder in VS Code.
+- add a `.env` file in the root directory with the following:
+
+  ```
+  REACT_APP_API_URL=http://localhost:3000
+  PORT=3001
+  ```
+  
+- In a bash terminal, run `npm install` to install dependencies.
+- Make sure the app back end (oocaa-api repo) is running first in another VS Code window and then run `npm start` to run this app front end in development mode.
+  - The site should then be visible at [http://localhost:3001](http://localhost:3001)
 
 ## Available Scripts
 
@@ -11,14 +31,14 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-***Make sure you add your own .env file and add the following:
+***Make sure you add your own .env file and add the following:***
 
-- API_URL=http://localhost:3000
-- PORT=3001
+  - REACT_APP_API_URL=http://localhost:3000
+  - PORT=3001
+  
+***The API is running on 3000 so the UI can't, which is why*** `PORT` ***is defined as 3001 in*** `.env`.
 
-Our API is running on 3000 so our UI can't, which is why I defined the port to be 3001.***
-
-The page will reload when you make changes.\
+The page will reload when you save changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
